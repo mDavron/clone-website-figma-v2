@@ -1,8 +1,10 @@
+.hero {
+  padding: 2em 0;
+}
 .hero-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2em 0;
   /* height: 50vh; */
 }
 .left_content {
@@ -48,8 +50,8 @@
   background: linear-gradient(92.42deg, #498add 3.72%, #214691 92.65%);
 }
 
-.left_content button {
-}
+/* .left_content button {
+} */
 .right_imgBox {
   flex: 40%;
   position: relative;
@@ -64,13 +66,11 @@
 @media (max-width: 768px) {
   .hero-inner {
     flex-direction: column;
-    padding: 4em 0;
   }
   .right_imgBox {
     flex: 1;
   }
   .left_content {
-    /* background: #000; */
     flex: 1;
   }
 }

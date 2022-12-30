@@ -6,7 +6,7 @@ import HeroItem from "./HeroItem";
 
 const HeroSection = () => {
   return (
-    <section id="hero">
+    <section id="hero" className="hero">
       <div className="container">
         <div className="hero-inner">
           <div className="left_content">
@@ -24,8 +24,8 @@ const HeroSection = () => {
           <div className="right_imgBox">
             <img src={heroImg} alt="heroImg" />
           </div>
-          {/* <HeroItem /> */}
         </div>
+        <HeroItem />
       </div>
     </section>
   );
