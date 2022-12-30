@@ -10,7 +10,7 @@ const Navbar = () => {
       <div className="container">
         <div className="navbar_inner">
           <a href="#">
-            <img src={logo} alt="" />
+            <img className="navbar_logo" src={logo} alt="" />
           </a>
           <ul className="menu">
             <li>

@@ -1,38 +1,41 @@
 .hero-inner {
-  display: grid;
-  grid-template-columns: 5fr 4fr;
-  place-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em 0;
+  /* height: 50vh; */
 }
 .left_content {
+  /* background: #000; */
+  flex: 60%;
 }
 .left_content h2 {
   font-weight: 700;
-  font-size: 56px;
-  line-height: 64px;
+  font-size: 3em;
   color: #214690;
 }
 .left_content h3 {
   font-weight: 400;
-  font-size: 56px;
-  line-height: 64px;
+  font-size: 3em;
   color: #457abd;
 }
 .left_content p {
   font-weight: 400;
-  font-size: 21px;
-  line-height: 31px;
+  font-size: 1.2em;
   color: rgba(34, 64, 124, 0.8);
   padding-top: 1.5rem;
   margin-bottom: 1rem;
 }
 .join-course {
-  width: 230px;
-  height: 55.26px;
+  width: 11em;
+  height: 2.8em;
   background: linear-gradient(92.42deg, #214691 3.72%, #498add 92.65%);
   border-radius: 11.2785px;
   font-weight: 600;
-  font-size: 18px;
-  margin-top: 2rem;
+  font-size: 1.2em;
+  margin-top: 2em;
+  padding: 0 5px;
+
   /* or 100% */
 
   color: #ffffff;
@@ -47,9 +50,27 @@
 
 .left_content button {
 }
+.right_imgBox {
+  flex: 40%;
+  position: relative;
+}
 
 .right_imgBox img {
-  height: 580px;
+  /* position: absolute; */
+  width: 100%;
   object-fit: cover;
-  /* width: 400px; */
+  width: 30em;
+}
+@media (max-width: 768px) {
+  .hero-inner {
+    flex-direction: column;
+    padding: 4em 0;
+  }
+  .right_imgBox {
+    flex: 1;
+  }
+  .left_content {
+    /* background: #000; */
+    flex: 1;
+  }
 }

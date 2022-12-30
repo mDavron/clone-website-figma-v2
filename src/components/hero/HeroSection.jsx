@@ -1,7 +1,8 @@
 import React from "react";
 import "./HeroSection.css";
-import heroImg from "../../assets/images/hero.jpg";
+import heroImg from "../../assets/images/hero.svg";
 import rightArrow from "../../assets/svg/right-arrow.svg";
+import HeroItem from "./HeroItem";
 
 const HeroSection = () => {
   return (
@@ -23,6 +24,7 @@ const HeroSection = () => {
           <div className="right_imgBox">
             <img src={heroImg} alt="heroImg" />
           </div>
+          {/* <HeroItem /> */}
         </div>
       </div>
     </section>
