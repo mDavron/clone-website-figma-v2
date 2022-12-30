@@ -1,0 +1,77 @@
+.navbar {
+  /* background-color: #f1bfbf; */
+  height: 80px;
+}
+.navbar_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  border-bottom: 1px solid #a6c1e233;
+}
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3vw;
+  height: 100%;
+}
+.menu li a {
+  font-weight: 500;
+  font-size: 14px;
+  color: #000000;
+  transition: all 0.4s ease;
+  position: relative;
+}
+.menu li a:hover::before {
+  position: absolute;
+  content: "";
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 3px;
+  border-radius: 20px;
+  background-image: url("../../assets/svg/line.svg");
+}
+.menu li a:hover {
+  color: #457abd;
+}
+/* BUTTON STYLES HERE */
+.button_group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button_group .registr-btn {
+  font-weight: 600;
+  font-size: 16px;
+  color: #457abd;
+  background-color: transparent;
+  padding: 6px;
+  margin-right: 15px;
+  transition: 0.3s ease;
+  border-radius: 5px;
+}
+.button_group .registr-btn:hover {
+  background-color: #ced7e3;
+}
+.button_group .login-btn {
+  font-weight: 600;
+  font-size: 16px;
+  color: #ffffff;
+  background: #214690;
+  border-radius: 10px;
+  width: 120px;
+  padding: 5px;
+  height: 48px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: 0.3s;
+}
+.button_group .login-btn:hover {
+  background-color: #122a5a;
+}
+/* .menu .button_group .login img {
+} */
